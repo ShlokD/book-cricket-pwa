@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html><html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Book Cricket PWA</title>
+  <meta name="description" content="A book cricket progressive Webapp">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <section id="install-prompt" class="section is-hidden">
+    <button class="button" id="install-prompt-button">Add App To Home Screen</button>
+  </section>
+  <section class="hero is-info is-large" id="scoreboard">
+    <div class="hero-body is-centered is-vcentered has-text-centered">
+      <h1 class="title is-1">Book Cricket</h1>
+      <div id="scores" class="columns is-mobile is-centered is-vcentered">
+        <div class="column" id="scorecard-team-a">
+          <h2 id="name-team-a" class="subtitle is-size-3 has-text-weight-bold">Shaitans</h2>
+          <p id="score-team-a" class="content has-text-weight-semibold is-size-4">0/0</p>
+          <p id="overs-team-a" class="content has-text-weight-semibold is-size-5">0.0</p>
+        </div>
+        <div class="column" id="scorecard-team-b">
+          <h2 id="name-team-b" class="subtitle is-size-3 has-text-weight-bold">Pishachs</h2>
+          <p id="score-team-b" class="content has-text-weight-semibold is-size-4">Yet to Bat</p>
+          <p id="overs-team-b" class="content has-text-weight-semibold is-size-5">0.0</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section is-mobile is-centered is-vcentered">
+    <p id="winner" class="has-text-weight-bold is-size-3"></p>
+  </section>
+
+  <div class="columns is-mobile is-centered is-vcentered">
+      <button id="play" class="is-mobile button is-size-4">Play</button>
+  </div>
+  <script type="module" src="js/app.js"></script>
+</body>
+
+</html>
